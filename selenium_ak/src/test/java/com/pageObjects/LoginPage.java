@@ -25,11 +25,6 @@ public class LoginPage {
 	@FindBy(name="btnLogin")
 	WebElement btnLogin;
 	
-	@FindBy(xpath="//a[normalize-space()='Log out']")
-	WebElement linklogout;
-	
-	
-	
 	
 	public void setUserName(String Uname) 
 	{
@@ -46,12 +41,6 @@ public class LoginPage {
 	public void loginClick() 
 	{
 		btnLogin.click();
-		
-	}
-	
-	public void linklogout() 
-	{
-		linklogout.click();
 		
 	}
 }
